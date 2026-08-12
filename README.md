@@ -24,9 +24,11 @@ or other private source material.
 Install [elan](https://github.com/leanprover/elan), then run:
 
 ```sh
-lake update
 lake build
 ```
 
 The toolchain and mathlib revision are pinned to Lean/mathlib `v4.19.0`.
 The source uses no `sorry`, `admit`, custom axioms, or unsafe escape hatches.
+The scope is deliberately narrow: the project verifies the deterministic
+screening bridge, not the population projection, EVT approximation, local-Hill
+concentration, or probabilistic error bounds established in the article.
